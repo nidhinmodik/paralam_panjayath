@@ -23,6 +23,7 @@ class newsController {
 
             const [fields, files] = await form.parse(req)
             const { url } = await cloudinary.uploader.upload(files.image[0].filepath, { folder: 'news_images' })
+            const httpsUrl = url.replace('http://', 'https://');
             const { title, description } = fields
             const news = await newsModel.create({
                 writerId: id,
@@ -32,7 +33,7 @@ class newsController {
                 description: description[0],
                 date: moment().format('LL'),
                 writerName: name,
-                image: url
+                image: httpsUrl
             })
             return res.status(201).json({ message: 'news add success', news })
         } catch (error) {

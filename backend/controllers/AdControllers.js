@@ -28,10 +28,11 @@ class adController {
             }
 
             const { url, duration } = await cloudinary.uploader.upload(file.filepath, uploadOptions);
+            const httpsUrl = url.replace('http://', 'https://');
 
             const ad = await adModel.create({
                 advertiserId: id,
-                mediaUrl: url,
+                mediaUrl: httpsUrl,
                 mediaType: isVideo ? 'video' : 'image',
                 duration: isVideo ? duration : undefined
             });
