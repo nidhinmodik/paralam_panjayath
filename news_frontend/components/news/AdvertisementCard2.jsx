@@ -15,7 +15,7 @@ const AdvertisementCard2 = async () => {
     return (
         <main className="bg-white mx-2 my-3 object-fill">
             {reversedAds && reversedAds.length > 0 && (
-                <div className="w-full h-[200px] relative object-fill">
+                <div className="w-full h-[350px] relative object-fill">
                     {reversedAds[2].mediaType === 'image' ? (
                         <Image
                             className="object-fill w-full h-full"

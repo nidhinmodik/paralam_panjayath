@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image';
 import logo from '../assets/logo.png';
 import Link from 'next/link';
-import Category from './Category';
 import { FaFacebookF } from 'react-icons/fa';
 import { AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
-import Gallery from './news/Gallery';
+
+
 
 const Footer = () => {
   return (
@@ -16,22 +16,18 @@ const Footer = () => {
             <div className='w-full flex flex-col gap-y-[0px] gap-l-[15px] px-2'>
               <Image
                 className=''
-                width={200}
-                height={100}
+                width={100}
+                height={50}
                 src={logo}
                 alt='logo'
               />
               <div className="text-xl font-bold text-white relative before:absolute before:w-[4px] before:bg-[#c80000] before:h-full before:-left-0 pl-3 md-5">
-                About One by one
+                പഞ്ചായത്തിനെക്കുറിച്ച്  അറിയാൻ
               </div>
               <h2 className='text-slate-500 my-[15px]'>
-                പക്ഷപാതരഹിതവും ആകർഷകവുമായ വാർത്താ കവറേജിനുള്ള നിങ്ങളുടെ ഉറവിടം. വ്യക്തതയോടും കൃത്യതയോടും പത്രപ്രവർത്തന സമഗ്രതയോടുള്ള പ്രതിബദ്ധതയോടും കൂടി നൽകുന്ന, പ്രാധാന്യമുള്ള കഥകൾ നിങ്ങൾക്ക് എത്തിക്കാൻ ഞങ്ങൾ പ്രതിജ്ഞാബദ്ധരാണ്.
+                Paralam (പാറളം) Gram Panchayat is a Rural Local Body in Cherpu Panchayat Samiti part of Thrissur Zila Parishad. There are total 4 Villages under Paralam Gram Panchayat jurisdiction. Gram Panchayat Cherpu is further divided into 15 Wards. Gram Panchayat Cherpu has total 15 elected members by people. Gram Panchayat Cherpu has total 9 schools.
               </h2>
             </div>
-          </div>
-          <Gallery />
-          <div>
-            <Category categories={[]} titleStyle='text-white' />
           </div>
           {/* <RecentNewsFooter /> */}
         </div>

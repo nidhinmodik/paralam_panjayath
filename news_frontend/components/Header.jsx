@@ -15,7 +15,6 @@ const Header = () => {
                 <span className='text-[13px] font-medium'>{moment().format('LLLL')}</span>
                 <span className='text-[13px] font-medium'> </span>
                 <div className='flex gap-x-[1px]'>
-                    <a className='w-[137px] h-[35px] flex justify-center items-center bg-[#ffffff2b]' href="">Visits:86035<FaEye /></a>
                     <a className='w-[37px] h-[35px] flex justify-center items-center bg-[#ffffff2b]' href=""><FaFacebookF /></a>
                     <a className='w-[37px] h-[35px] flex justify-center items-center bg-[#ffffff2b]' href=""><AiOutlineTwitter /></a>
                     <a className='w-[37px] h-[35px] flex justify-center items-center bg-[#ffffff2b]' href=""><AiFillYoutube /></a>
@@ -26,8 +25,13 @@ const Header = () => {
                     <div className='flex justify-center items-center flex-wrap'>
                         <div className='md:w-4/12 w-full'>
                             <div className='flex flex-col justify-center items-center md:items-start'>
-                                <a href="/"><Image className='w-[50px] h-full' alt='logo' src={logo} /></a>
-                                <Image className='w-[50px] h-[50px]' alt='logo' src={onebyone} />
+                                <a href="/"><Image height={'120px'} width={'160px'} alt='logo' src={logo} /></a>
+                                <div style={{ marginTop: '10px' }} className='w-full flex justify-end'>
+                                    <b style={{ fontSize: '25px', fontWeight: '700' }}><h6 className='text-[#cccccc]'><p className='text-center justify-center'>പാറളം പഞ്ചായത് വാർത്തകൾ</p></h6></b>
+                                    {/* <Image className='w-[30px] h-[30px]' alt='logo' src={onebyone} /> */}
+                                </div>
+                                
+
                                 <div style={{ marginTop: '10px' }} className='w-full flex justify-end'>
                                     <b style={{ fontSize: '10px' }}><h6 className='text-[#cccccc]'><p className='text-center justify-center'>നിങ്ങളുടെ വ്യക്തിഗത വാർത്താ സ്രോതസ് - ഓരോ വാർത്തയും നിങ്ങൾക്കായി</p></h6></b>
                                 </div>

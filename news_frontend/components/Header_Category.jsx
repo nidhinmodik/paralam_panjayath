@@ -41,13 +41,13 @@ const Header_Category = () => {
     return (
         <div className='w-full'>
             <div className='bg-[#c80000] w-full text-white uppercase font-semibold relative'>
-                <div className='px-8 flex justify-between items-center relative h-[50px]'>
+                <div className='px-2 flex justify-between items-center relative h-[50px]'>
                     <div onClick={() => set_cate_show(!cate_show)} className={`text-3xl flex lg:hidden font-bold h-full w-[48px] cursor-pointer justify-center items-center ${cate_show ? 'bg-[#00000026]' : ''} hover:bg-[#00000026]`}>
                         <BsList />
                     </div>
-                    <Link className={`px-2 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Panjayath'} >പ്രധാനവാർത്തകൾ</Link>
-                    <Link className={`px-2 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Information'} >അറിയ്പുകൾ</Link>
-                    <Link className={`px-2 text-xs my-2 py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href="https://api.whatsapp.com/send?phone=+918943947138" target='_blank' >ഷെയർ ന്യൂസ്/റിവ്യൂ</Link>
+                    <Link className={`px-2 bg-[#c80000] text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Panjayath'} >പ്രധാനവാർത്തകൾ</Link>
+                    <Link className={`px-2 bg-[#c80000] text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Information'} >അറിയ്പുകൾ</Link>
+                    <Link className={`px-2 bg-[#c80000] text-xs my-2 py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href="https://api.whatsapp.com/send?phone=+918943947138" target='_blank' >ഷെയർ ന്യൂസ്/റിവ്യൂ</Link>
                     <div className='flex-wrap hidden lg:flex'>
                         {/* <Link className={`px-6 font-medium py-[13px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/'} >Home</Link> */}
                         {/* {
@@ -57,10 +57,10 @@ const Header_Category = () => {
                                 </Link>
                             )
                         } */}
-                        <Link className={`px-2 mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Panjayath'} >പഞ്ചായത്തു വാർത്തകൾ</Link>
-                        <Link className={`px-2 mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Ward'} >വാർഡ് തല വാർത്തകൾ</Link>
-                        <Link className={`px-2 mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Kerala'} >കേരള വാർത്തകൾ</Link>
-                        <Link className={`px-2 mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Education'} >വിദ്യാഭ്യാസം</Link>
+                        <Link className={`px-2 bg-[#c80000] mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Panjayath'} >പഞ്ചായത്തു വാർത്തകൾ</Link>
+                        <Link className={`px-2 bg-[#c80000] mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Ward'} >വാർഡ് തല വാർത്തകൾ</Link>
+                        <Link className={`px-2 bg-[#c80000] mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Kerala'} >കേരള വാർത്തകൾ</Link>
+                        <Link className={`px-2 bg-[#c80000] mx-4 text-xs py-[8px] ${path === '/' ? 'bg-[#00000026]' : ''}`} href={'/news/category/Education'} >വിദ്യാഭ്യാസം</Link>
                     </div>
                     {/* <div className='h-full w-[48px]'>
                         <div

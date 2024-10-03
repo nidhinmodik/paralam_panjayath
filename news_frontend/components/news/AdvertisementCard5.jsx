@@ -1,6 +1,7 @@
 import React from 'react';
 import { base_api_url } from '../../config/config';
 import Image from "next/legacy/image";
+import banner from '../../assets/header-bg2.jpg'
 
 const AdvertisementCard5 = async () => {
     const res = await fetch(`${base_api_url}/api/all/ads`, {
@@ -13,9 +14,9 @@ const AdvertisementCard5 = async () => {
     const reversedAds = ads.reverse();
 
     return (
-        <main className="bg-white mx-2 my-3 object-fill">
+        <main className="overflow-x-auto object-fill">
             {reversedAds && reversedAds.length > 0 && (
-                <div className="w-full h-[200px] relative object-fill">
+                <div className=" w-full h-[400px] relative object-fill">
                     {reversedAds[5].mediaType === 'image' ? (
                         <Image
                             className="object-fill w-full h-full"
@@ -27,8 +28,9 @@ const AdvertisementCard5 = async () => {
                         <video
                             className="object-fill w-full h-full"
                             autoPlay
-                            loop
+                            controls
                             muted
+                            loop
                             src={reversedAds[5].mediaUrl.replace('http://', 'https://')}
                             alt="1st"
                         />

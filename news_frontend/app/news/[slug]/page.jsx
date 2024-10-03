@@ -14,6 +14,8 @@ import RelatedNews from "@/components/news/RelatedNews";
 import RecentNews from "@/components/news/RecentNews";
 import AdvertisementBox from "@/components/news/AdvertisementBox";
 import AdvertisementCard from "@/components/news/AdvertisementCard";
+import AdvertisementCard4 from "@/components/news/AdvertisementCard4";
+import AdvertisementCard3 from "@/components/news/AdvertisementCard3";
 
 const Details = async ({ params }) => {
 
@@ -60,13 +62,13 @@ const Details = async ({ params }) => {
                   </div>
                 </div>
               </div>
-              <AdvertisementCard />
+              <AdvertisementCard3 />
             </div>
             <div className="w-full xl:w-4/12">
               <div className="w-full pl-0 xl:pl-4">
                 <div className="flex flex-col gap-y-8">
                   <Search />
-                  <AdvertisementBox />
+                  <AdvertisementCard4 />
                   <RecentNews />
                   <div className="p-4 bg-white">
                     <Category titleStyle={"text-gray-700 font-bold"} />

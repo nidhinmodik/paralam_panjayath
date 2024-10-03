@@ -12,7 +12,8 @@ import { base_api_url } from "@/config/config";
 import AdvertisementBox from "@/components/news/AdvertisementBox";
 import AdvertisementCard from "@/components/news/AdvertisementCard";
 import AdvertisementCard2 from "@/components/news/AdvertisementCard2";
-import AdvertisementCard3 from "@/components/news/AdvertisementCard3";
+import AdvertisementCard5 from "@/components/news/AdvertisementCard5";
+import AboutPanjayath from "@/components/news/AboutPanjayath";
 
 const Home = async () => {
   const news_data = await fetch(`${base_api_url}/api/all/news`, {
@@ -109,7 +110,7 @@ const Home = async () => {
                     category="Local"
                     type="details-news"
                   />
-                  <AdvertisementCard3 />
+                  
                 </div>
                 <div className="w-full lg:w-4/12">
                   <DetailsNewsCol
@@ -147,6 +148,12 @@ const Home = async () => {
           </div>
         </div>
       </main>
+      <div>
+      <AdvertisementCard5 />
+      </div>
+      <div>
+        <AboutPanjayath/>
+      </div>
       <Footer />
     </div>
   );
